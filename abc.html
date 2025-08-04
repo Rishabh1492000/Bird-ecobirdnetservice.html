@@ -42,186 +42,161 @@
 
 <body class="body-scroll">
 
-
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <a href="https://wa.me/+919211067111/?text=Hi" class="float" target="_blank">
 <i class="fa fa-whatsapp my-float"></i>
 </a>
 
 <style>
-        /* Styling for the scroll container */
-        div.scroll-container {
-            overflow: hidden;  /* Hide the overflowed images */
-            white-space: nowrap;  /* Prevent wrapping of images */
-            padding: 10px 0;  /* Adds padding on top and bottom */
-            width: 100%;  /* Ensure the container takes up the full width */
-        }
-
-        /* Styling for images inside the scroll container */
-        div.scroll-container img {
-            padding: 10px;  /* Adds space between each image */
-            height: 200px;  /* Set a fixed height for the images */
-            width: auto;  /* Maintain the aspect ratio */
-            border-radius: 10px;  /* Optional: Add rounded corners */
-        }
-
-        /* Animation for scrolling the images */
-        @keyframes auto-scroll {
-            0% {
-                transform: translateX(100%);  /* Start off-screen to the right */
-            }
-            100% {
-                transform: translateX(-100%);  /* End off-screen to the left */
-            }
-        }
-
-        /* Apply the scrolling animation */
-        div.scroll-container {
-            animation: auto-scroll 20s linear infinite;  /* Adjust speed by changing duration */
-        }
-    </style>
-<body class="body-scroll">
-	<!-- Document Wrapper
-	============================================= -->
-	<div id="wrapper" class="wrapper clearfix">
-
-		<!-- Header
-        ============================================= -->
-		<header id="navbar-spy" class="header header-1 header-fixed">
-
-			<nav id="primary-menu" class="navbar navbar-fixed-top">
-				<div class="container">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-                        <a class="logo" href="index.php">
-                            <img class="logo-dark" src="assets/images/logo/logo-final1.png" alt="Eco Bird Net Service Logo">
-                            <img class="logo-light" src="assets/images/logo/logo-final1.png" alt="Eco Bird Net Service Logo">
-                        </a>
-                        
-                        <style>
-                            .logo img {
-                                max-width: 300px; /* Default size for desktops */
-                                height: auto;
-                            }
-                        
-                            @media (max-width: 768px) { /* Tablets & small screens */
-                                .logo img {
-                                    max-width: 250px; /* Larger on tablets */
-                                }
-                            }
-                        
-                            @media (max-width: 480px) { /* Small phones */
-                                .logo img {
-                                    max-width: 200px; /* Still big but not oversized */
-                                }
-                            }
-                        </style>
-                        
-                         <!-- Floating Action Button -->
-<a href="https://g.page/r/CUIURtFSwhRHEAI/review" class="floating-button" target="_blank">
-    <i class="fa fa-star"></i> <!-- You can change the icon as needed -->
-</a>
-
-<style>
-    /* Floating Button Styles */
-    .floating-button {
-        position: fixed;
-        bottom: 30px; /* Distance from the bottom */
-        left: 30px; /* Distance from the left */
-        background-color: #ffcc00; /* Highlight color */
-        color: #fff; /* Text color */
-        border-radius: 50%; /* Circular shape */
-        width: 60px; /* Width of the button */
-        height: 60px; /* Height of the button */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Shadow for depth */
-        font-size: 24px; /* Icon size */
-        text-decoration: none; /* Remove underline */
-        transition: background-color 0.3s ease; /* Smooth transition */
+    div.scroll-container {
+        overflow: hidden;
+        white-space: nowrap;
+        padding: 10px 0;
+        width: 100%;
     }
 
-    .floating-button:hover {
-        background-color: #ff9900; /* Darker highlight color on hover */
+    div.scroll-container img {
+        padding: 10px;
+        height: 200px;
+        width: auto;
+        border-radius: 10px;
+    }
+
+    @keyframes auto-scroll {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    div.scroll-container {
+        animation: auto-scroll 20s linear infinite;
     }
 </style>
 
+<body class="body-scroll">
+<div id="wrapper" class="wrapper clearfix">
+    <header id="navbar-spy" class="header header-1 header-fixed">
+        <nav id="primary-menu" class="navbar navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="logo" href="index.php">
+                        <img class="logo-dark" src="assets/images/logo/logo-final1.png" alt="Eco Bird Net Service Logo">
+                        <img class="logo-light" src="assets/images/logo/logo-final1.png" alt="Eco Bird Net Service Logo">
+                    </a>
 
-					</div>
-					<div class="collapse navbar-collapse pull-right" id="navbar-collapse-1">
-						<ul class="nav navbar-nav nav-pos-right navbar-left nav-split">
-							<li class="active"><a data-scroll="scrollTo" href="#slider">home</a>
-							</li>
-							<li><a data-scroll="scrollTo" href="#feature2">About us</a>
-							</li>
-							<li><a data-scroll="scrollTo" href="#reviews">reviews</a>
-							</li>
-						
-							<li><a data-scroll="scrollTo" href="#cta">contact us</a>
-							</li>
-						</ul>
-					</div>
-					<!--/.nav-collapse -->
-				</div>
-			</nav>
-		</header>
+                    <style>
+                        .logo img {
+                            max-width: 300px;
+                            height: auto;
+                        }
 
-		<!-- Slider #1
-		============================================= -->
-        <section id="slider" class="section slider slider-form">
-            <div class="slide--item bg-overlay bg-overlay-dark">
-                <div class="bg-section">
-                    <img src="assets/images/background/shared1.png" alt="bg">
+                        @media (max-width: 768px) {
+                            .logo img {
+                                max-width: 250px;
+                            }
+                        }
+
+                        @media (max-width: 480px) {
+                            .logo img {
+                                max-width: 200px;
+                            }
+                        }
+                    </style>
+
+                    <a href="https://g.page/r/CUIURtFSwhRHEAI/review" class="floating-button" target="_blank">
+                        <i class="fa fa-star"></i>
+                    </a>
+
+                    <style>
+                        .floating-button {
+                            position: fixed;
+                            bottom: 30px;
+                            left: 30px;
+                            background-color: #ffcc00;
+                            color: #fff;
+                            border-radius: 50%;
+                            width: 60px;
+                            height: 60px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+                            font-size: 24px;
+                            text-decoration: none;
+                            transition: background-color 0.3s ease;
+                        }
+
+                        .floating-button:hover {
+                            background-color: #ff9900;
+                        }
+                    </style>
                 </div>
-                <div class="container">
-                    <div class="row row-content">
-                        <div class="col-xs-12 col-sm-6 col-md-5 pt-100">
+                <div class="collapse navbar-collapse pull-right" id="navbar-collapse-1">
+                    <ul class="nav navbar-nav nav-pos-right navbar-left nav-split">
+                        <li class="active"><a data-scroll="scrollTo" href="#slider">home</a></li>
+                        <li><a data-scroll="scrollTo" href="#feature2">About us</a></li>
+                        <li><a data-scroll="scrollTo" href="#reviews">reviews</a></li>
+                        <li><a data-scroll="scrollTo" href="#cta">contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-2">
-                            <div class="slide--action" style="background: rgba(255, 255, 255, 0.9); padding: 20px; border-radius: 10px;">
-                                <h6 style="color: #2c3e50; font-size: 20px; font-weight: bold;">📍 Bird Netting Services Available in:<br> Delhi NCR, Haryana, Gurgaon</h6>
-                                <p style="color: #444;">Get in Touch for a Free Consultation! 🏡✨<br><br>
-                                    <a href="https://wa.me/+919211067111" target="_blank">
-                                        <button style="background-color: #25D366; color: white; padding: 12px 25px; border: none; border-radius: 50px; font-size: 16px; cursor: pointer; font-weight: bold;">
-                                            🟢 Chat on WhatsApp +919211067111
-                                        </button>
-                                    </a>
-                                </p>
-                                <p style="text-align: center;">
-                                    <a href="tel:+919211067111">
-                                        <button style="
-                                            background: linear-gradient(45deg, #25D366, #128C7E);
-                                            color: white;
-                                            padding: 14px 28px;
-                                            border: none;
-                                            border-radius: 50px;
-                                            font-size: 18px;
-                                            font-weight: bold;
-                                            cursor: pointer;
-                                            transition: all 0.3s ease;
-                                            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.4);
-                                            width: 280px;">
-                                            📞 Call +919211067111
-                                        </button>
-                                    </a>
-
-                                </p>
-                            </div>
+    <section id="slider" class="section slider slider-form">
+        <div class="slide--item bg-overlay bg-overlay-dark">
+            <div class="bg-section">
+                <img src="assets/images/background/shared1.png" alt="bg" style="width: 100%; height: auto; object-fit: cover;">
+            </div>
+            <div class="container">
+                <div class="row row-content">
+                    <div class="col-xs-12 col-sm-6 col-md-5 pt-100"></div>
+                    <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-2">
+                        <div class="slide--action" style="background: rgba(255, 255, 255, 0.95); padding: 25px; border-radius: 12px;">
+                            <h6 style="color: #2c3e50; font-size: 20px; font-weight: bold;">📍 Bird Netting Services Available in:<br> Delhi NCR, Haryana, Gurgaon</h6>
+                            <p style="color: #444; font-size: 16px;">Get in Touch for a Free Consultation! 🏡✨<br><br>
+                                <a href="https://wa.me/+919211067111" target="_blank">
+                                    <button style="background-color: #25D366; color: white; padding: 12px 25px; border: none; border-radius: 50px; font-size: 16px; cursor: pointer; font-weight: bold;">
+                                        🟢 Chat on WhatsApp +919211067111
+                                    </button>
+                                </a>
+                            </p>
+                            <p style="text-align: center;">
+                                <a href="tel:+919211067111">
+                                    <button style="
+                                        background: linear-gradient(45deg, #25D366, #128C7E);
+                                        color: white;
+                                        padding: 14px 28px;
+                                        border: none;
+                                        border-radius: 50px;
+                                        font-size: 18px;
+                                        font-weight: bold;
+                                        cursor: pointer;
+                                        transition: all 0.3s ease;
+                                        box-shadow: 0 4px 10px rgba(37, 211, 102, 0.4);
+                                        width: 100%;">
+                                        📞 Call +919211067111
+                                    </button>
+                                </a>
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        
-		<!-- #slider end -->
+        </div>
+    </section>
+</div>
+</body>
+
 
 		<!-- Feature #1
 		============================================= -->
